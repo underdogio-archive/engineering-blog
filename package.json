@@ -1,0 +1,40 @@
+{
+  "name": "underdogio.github.io",
+  "description": "Engineering blog for Underdog.io",
+  "version": "1.0.0",
+  "homepage": "https://github.com/underdogio/underdogio.github.io",
+  "author": {
+    "name": "Underdog.io Engineering",
+    "email": "todd@underdog.io",
+    "url": "http://engineering.underdog.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/underdogio/underdogio.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/underdogio/underdogio.github.io/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/underdogio/underdogio.github.io/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/underdogio.github.io",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\" 1>&2 && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "underdog.io",
+    "underdogio",
+    "engineering",
+    "blog"
+  ],
+  "private": true
+}
