@@ -14,7 +14,7 @@
       <pubDate>Mon, 29 Apr 2013 19:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/articles/hello-world/</guid>
       <author></author>
-      <description>&lt;p&gt;This is a placeholder article. More articles coming soon!&lt;/p&gt;
+      <description>&lt;p&gt;This is a placeholder article. More articles coming soon! This line looks off center without more spacer content so here is some more content.&lt;/p&gt;
 </description>
     </item>
   </channel>
