@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
 }
 
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Lato', serif;
   font-size: 21px;
   line-height: 1.52;
   background-color: #f8f8f8;
@@ -16,12 +16,15 @@ body {
   margin: 0 auto;
 }
 
-body, a {
-  color: #171717;
+body {
+  color: #333;
+}
+
+a {
+  color: inherit;
 }
 
 a:hover {
-  color: #ff8000;
   text-decoration: underline;
 }
 
@@ -34,7 +37,6 @@ pre {
   overflow: auto;
   background: #fff;
   border: 1px dashed #d2d2d2;
-  border-radius: 0.25em;
   margin-bottom: 1.8em;
   padding: 1em;
 }
@@ -52,7 +54,6 @@ h2 {
 }
 
 h3 {
-  font-style: italic;
   text-align: center;
   font-weight: 400;
   font-size: 1.4em;
@@ -88,7 +89,8 @@ hr {
 }
 
 .header h1 {
-  font-size: 2.6em;
+  /* TODO: Replace with .giga/.kilo */
+  font-size: 2.3em;
   text-align: center;
   font-weight: 700;
   margin: 0;
@@ -96,11 +98,9 @@ hr {
 
 .header a, .header a:hover {
   text-decoration: none;
-  color: #171717;
 }
 
 .header .author {
-  font-family: 'Merriweather', serif;
   font-variant: small-caps;
   text-transform: lowercase;
   text-rendering: auto;
@@ -111,14 +111,11 @@ hr {
 
 .header .description {
   font-size: 1.2em;
-  font-style: italic;
   text-align: center;
-  margin-top: -0.3em;
 }
 
 body.article-detail > header h1 {
   font-size: 2.5em;
-  font-style: italic;
   font-weight: 400;
   margin-bottom: -0.2em;
 }
@@ -145,20 +142,6 @@ footer .nav a {
   text-decoration: none;
 }
 
-footer .about {
-  border-top: 1px dashed #d2d2d2;
-  padding: 2.2em 3em;
-  font-size: 0.7em;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  -ms-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 2em;
-  -moz-column-gap: 2em;
-  -ms-column-gap: 2em;
-  column-gap: 2em;
-}
-
 footer .copy {
   text-align: center;
   font-size: 0.7em;
@@ -166,7 +149,7 @@ footer .copy {
   margin-top: 1em;
 }
 
-footer .copy, footer .copy a {
+.muted {
   color: #8e8e8e;
 }
 
@@ -176,12 +159,7 @@ footer .copy, footer .copy a {
   margin: 3em 0 4em;
 }
 
-.article header {
-  border-top: 1px dashed #d2d2d2;
-}
-
 .article header h2 {
-  font-style: italic;
   text-align: center;
   font-weight: 400;
   margin: 0.8em 0;
@@ -218,14 +196,21 @@ footer .copy, footer .copy a {
   width: 100%;
 }
 
-.more, .date {
-  font-family: 'Merriweather', serif;
+.date {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-rendering: auto;
+  letter-spacing: 1px;
+}
+
+.more {
   font-variant: small-caps;
   text-transform: lowercase;
   font-weight: 400;
   text-rendering: auto;
   letter-spacing: 1px;
 }
+
 
 /* archive */
 
@@ -240,7 +225,6 @@ footer .copy, footer .copy a {
   margin: 0;
   margin-left: 6.1em;
   margin-bottom: 0.5em;
-  font-style: italic;
 }
 
 .archive a, .archive span{
@@ -268,7 +252,6 @@ footer .copy, footer .copy a {
 .archive .year-label,
 .archive .month-label{
   width: 4em;
-  font-family: 'Merriweather', serif;
   font-variant: small-caps;
   text-transform: lowercase;
   font-weight: 400;
