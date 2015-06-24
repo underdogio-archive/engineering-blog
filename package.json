@@ -26,10 +26,21 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "test": "echo \"No tests yet\" 1>&2 && exit 1"
+    "build": "wintersmith build && echo \"engineering.underdog.io\" > build/CNAME",
+    "deploy": "echo \"Do not run this command directly. Instead, please run \\`bin/release.sh\\` as documented in README.md\" && exit 1",
+    "_deploy": "test -d build/ && gh-pages --dist build/ --branch master",
+    "release": "bin/release.sh",
+    "start": "wintersmith preview",
+    "test": "bin/test.sh"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "~0.3.1",
+    "moment": "~2.3.0",
+    "typogr": "~0.5.0",
+    "underscore": "~1.4.0",
+    "wintersmith": "~2.2.0"
+  },
   "keywords": [
     "underdog.io",
     "underdogio",
