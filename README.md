@@ -36,6 +36,19 @@ livereload
 # [I 150619 19:22:15 handlers:118] Start watching changes
 ```
 
+### Publishing a preview
+When submitting a pull request, it is nice to be able to preview changes to the website. We have build `npm run preview-release` for that purpose.
+
+When you run it, it will publish the current branch's build to `{{branch}}.preview` (e.g. `dev/hello` -> `dev/hello.preview`). This branch should be accessible via <https://htmlpreview.github.io/>
+
+```bash
+# Publish a preview branch
+npm run preview-release
+
+# Access the preview via htmlpreview.github.io
+# http://htmlpreview.github.io/?https://github.com/underdogio/underdogio.github.io/blob/{{preview_branch}}/index.html
+```
+
 ### Releasing
 We have automated our release process to keep it consistent among developers. Before releasing, please make sure to update the `CHANGELOG.md`.
 

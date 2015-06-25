@@ -26,9 +26,11 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "build": "wintersmith build && echo \"engineering.underdog.io\" > build/CNAME",
+    "build": "npm run clean && wintersmith build && echo \"engineering.underdog.io\" > build/CNAME",
+    "clean": "if test -d build/; then rm -r build/; fi",
     "deploy": "echo \"Do not run this command directly. Instead, please run \\`bin/release.sh\\` as documented in README.md\" && exit 1",
     "_deploy": "test -d build/ && gh-pages --dist build/ --branch master",
+    "preview-release": "bin/preview-release.sh",
     "release": "bin/release.sh",
     "start": "wintersmith preview",
     "test": "bin/test.sh"

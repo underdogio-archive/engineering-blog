@@ -19,6 +19,9 @@ git push origin --tags
 # Publish the compiled version to `gh-pages`
 npm run _deploy
 
+# Silence extra noise
+set +x
+
 # Notify ourselves of the successful build
 echo "underdogio.github.io has been built and deployed successfully as \"$version\""
 echo "Please verify changes at http://underdogio.github.io/"
