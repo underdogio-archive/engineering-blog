@@ -5,16 +5,43 @@
     <atom:link href="http://engineering.underdog.io/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://engineering.underdog.io</link>
     <description>Articles and insights from the Underdog.io Engineering team</description>
-    <pubDate>Mon, 29 Apr 2013 19:00:00 -0500</pubDate>
+    <pubDate>Thu, 18 Jun 2015 19:00:00 -0500</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
-      <title>README</title>
-      <link>http://engineering.underdog.io/articles/hello-world/</link>
-      <pubDate>Mon, 29 Apr 2013 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://engineering.underdog.io/articles/hello-world/</guid>
+      <title>Roll call: Todd Wolfson</title>
+      <link>http://engineering.underdog.io/articles/roll-call-todd/</link>
+      <pubDate>Thu, 18 Jun 2015 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://engineering.underdog.io/articles/roll-call-todd/</guid>
       <author></author>
-      <description>&lt;p&gt;This is a placeholder article. More articles coming soon! This line looks off center without more spacer content so here is some more content.&lt;/p&gt;
+      <description>&lt;p&gt;This is the first work in an introductory series to let you peek behind the curtain and get to know the engineering team at &lt;a href=&quot;https://underdog.io/&quot;&gt;Underdog.io&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt=&quot;Photo of Todd&quot; src=&quot;todd.jpg&quot; style=&quot;width: auto; float: left; padding-right: 10px;&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;who-are-you-and-what-do-you-do-at-underdog-io-&quot;&gt;Who are you and what do you do at Underdog.io?&lt;/h4&gt;
+&lt;p&gt;My name is Todd Wolfson, I am senior software engineer at &lt;a href=&quot;https://underdog.io/&quot;&gt;Underdog.io&lt;/a&gt;. The engineering team is small right now so what I do can vary a lot from day to day.&lt;/p&gt;
+&lt;p&gt;One day I might be building on a release script for AWS. Another day I might be writing browser JavaScript. One more day and I might be writing Python for a backend JSON service.&lt;/p&gt;
+&lt;p&gt;Typically it’s not that hectic but that should give you an idea of all the hats we can wear. Most recently, my time has been spent on automating our weekly batching process:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.underdog.io/post/119558043297/scaling-underdog-talent-marketplace-through-automation&quot;&gt;http://blog.underdog.io/post/119558043297/scaling-underdog-talent-marketplace-through-automation&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;what-hardware-do-you-use-&quot;&gt;What hardware do you use?&lt;/h4&gt;
+&lt;p&gt;I use a 15.4” Lenovo W520 laptop with a 2.4GHz Intel i7, 8GB of RAM, and a 256GB SSD. Attached to that, I have a secondary 27” LED ViewSonic monitor.&lt;/p&gt;
+&lt;h4 id=&quot;what-software-do-you-use-&quot;&gt;What software do you use?&lt;/h4&gt;
+&lt;p&gt;My OS is &lt;a href=&quot;http://www.linuxmint.com/&quot;&gt;Linux Mint 17.1 Cinnamon&lt;/a&gt;, one of the friendlier distributions of Linux. For development, I use &lt;a href=&quot;http://sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt; with &lt;a href=&quot;https://github.com/twolfson/dotfiles/blob/0.80.0/.config/sublime-text-3/Packages/User/Package%20Control.sublime-settings&quot;&gt;a lot of plugins&lt;/a&gt; (top picks are &lt;a href=&quot;https://github.com/ehamiter/GitHubinator&quot;&gt;GitHubinator&lt;/a&gt;, &lt;a href=&quot;https://github.com/jbrooksuk/InsertNums&quot;&gt;Insert Nums&lt;/a&gt;, &lt;a href=&quot;https://github.com/noklesta/SublimeQuickFileCreator&quot;&gt;Quick File Creator&lt;/a&gt;, and &lt;a href=&quot;https://github.com/titoBouzout/SideBarEnhancements&quot;&gt;SideBarEnhancements&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;When running applications, I automate re-running actions. For example, I use &lt;a href=&quot;https://github.com/remy/nodemon&quot;&gt;nodemon&lt;/a&gt; to automatically restart &lt;code&gt;node&lt;/code&gt; servers and &lt;a href=&quot;https://github.com/lepture/python-livereload&quot;&gt;python-livereload&lt;/a&gt; to automatically refresh altered websites. Here is an article I wrote a while back with more info:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://twolfson.com/2013-07-27-develop-faster&quot;&gt;http://twolfson.com/2013-07-27-develop-faster&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For further reading, my dotfiles have some more documentation on tooling:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/twolfson/dotfiles&quot;&gt;https://github.com/twolfson/dotfiles&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;outside-of-work-what-s-your-favorite-hobby-&quot;&gt;Outside of work, what’s your favorite hobby?&lt;/h4&gt;
+&lt;p&gt;I like to go out dancing (freeform, no formal style).&lt;/p&gt;
+&lt;h4 id=&quot;out-of-all-the-tools-you-use-what-is-your-favorite-&quot;&gt;Out of all the tools you use, what is your favorite?&lt;/h4&gt;
+&lt;p&gt;It’s a hard question but I think I would choose &lt;a href=&quot;http://sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;. Both multiple cursor support and writing my own plugins have significantly improved my productivity.&lt;/p&gt;
+&lt;h3 id=&quot;underdog-io-bonus-question&quot;&gt;Underdog.io bonus question&lt;/h3&gt;
+&lt;h4 id=&quot;what-s-your-favorite-interview-question-&quot;&gt;What’s your favorite interview question?&lt;/h4&gt;
+&lt;p&gt;My favorite question is “When you open your browser, type &lt;code&gt;https://underdog.io/&lt;/code&gt;, and press enter. What happens?”&lt;/p&gt;
+&lt;p&gt;Since it’s an open ended question, candidates will talk more about areas of deep knowledge and gloss over weaker areas. From there, we can drill down into finer pieces (e.g. how the browser handles HTML/CSS/JS) and go into expanded questions (e.g. what happens when we add a class to a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;).&lt;/p&gt;
+&lt;h4 id=&quot;links-&quot;&gt;Links:&lt;/h4&gt;
+&lt;p&gt;Website: &lt;a href=&quot;http://twolfson.com/&quot;&gt;http://twolfson.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Twitter: &lt;a href=&quot;https://twitter.com/twolfsn&quot;&gt;https://twitter.com/twolfsn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/twolfson&quot;&gt;https://github.com/twolfson&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
   </channel>
