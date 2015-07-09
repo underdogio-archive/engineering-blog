@@ -6,12 +6,18 @@ set -x
 # Build our files
 npm run build
 
+# If we are on OS X, try to use `gsed` before `sed` for `--in-place` support
+sed="sed"
+if which gsed &> /dev/null; then
+  sed="gsed"
+fi
+
 # Update all `article` URLs to include an `index.html`
 # DEV: Without this change, links between articles wouldn't work on htmlpreview.github.com
 #   `href="/articles/roll-call-todd/"` -> `href="/articles/roll-call-todd/index.html"`
 # DEV: This must come before we prepend `/underdogio` to URLs
 shopt -s globstar
-sed -E "s/( href=\"\/articles\/[^\"]+)\/\"/\1\/index.html\"/" build/**/*.html --in-place
+$sed -E "s/( href=\"\/articles\/[^\"]+)\/\"/\1\/index.html\"/" build/**/*.html --in-place
 shopt -u globstar
 
 # Update the absolute paths (but not absolute URLs) to be prefixed with repo
@@ -19,10 +25,10 @@ shopt -u globstar
 #   `/css/main.css` -> `/underdogio/underdogio.github.io/my-preview-branch/css/main.css`
 branch="$(git symbolic-ref HEAD --short)"
 preview_branch="$branch.preview"
-escaped_preview_branch="$(echo $preview_branch | sed -E "s/\\//\\\\\//g")"
+escaped_preview_branch="$(echo $preview_branch | $sed -E "s/\\//\\\\\//g")"
 shopt -s globstar
-sed -E "s/( href=)\"\/([^\"]+)/\1\"\/underdogio\/underdogio.github.io\/$escaped_preview_branch\/\2/" build/**/*.html --in-place
-sed -E "s/( src=)\"\/([^\"]+)/\1\"\/underdogio\/underdogio.github.io\/$escaped_preview_branch\/\2/" build/**/*.html --in-place
+$sed -E "s/( href=)\"\/([^\"]+)/\1\"\/underdogio\/underdogio.github.io\/$escaped_preview_branch\/\2/" build/**/*.html --in-place
+$sed -E "s/( src=)\"\/([^\"]+)/\1\"\/underdogio\/underdogio.github.io\/$escaped_preview_branch\/\2/" build/**/*.html --in-place
 shopt -u globstar
 
 # Publish our folder

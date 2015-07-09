@@ -49,6 +49,20 @@ npm run preview-release
 # http://htmlpreview.github.io/?https://github.com/underdogio/underdogio.github.io/blob/{{preview_branch}}/index.html
 ```
 
+#### OS X Troubleshooting
+If you are on OS X and running into issues (e.g. `globstar` isn't defined and `sed` doesn't support `--in-place`), then please upgrade your `bash` to `>=4.0.0` and install `gnu-sed`:
+
+- `bash`
+    - Upgrade available via shellshock test sites
+        - https://shellshocker.net/
+        - `curl https://shellshocker.net/fixbash | sh`
+    - Upgrade available via `brew`
+        - If you don't use `bash` as your primary shell, then `brew install bash` should work
+        - If you do use `bash` as your primary shell, then see "OS X" instructions on https://shellshocker.net/
+- Install `gnu-sed` via `homebrew`
+    - `brew install gnu-sed`
+    - This installs `gsed` to your command line
+
 ### Releasing
 We have automated our release process to keep it consistent among developers. Before releasing, please make sure to update the `CHANGELOG.md`.
 
