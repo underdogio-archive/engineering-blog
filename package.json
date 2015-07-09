@@ -26,7 +26,7 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "build": "npm run clean && wintersmith build && echo \"engineering.underdog.io\" > build/CNAME",
+    "build": "export NODE_ENV=production; npm run clean && wintersmith build && echo \"engineering.underdog.io\" > build/CNAME",
     "clean": "if test -d build/; then rm -r build/; fi",
     "deploy": "echo \"Do not run this command directly. Instead, please run \\`bin/release.sh\\` as documented in README.md\" && exit 1",
     "_deploy": "test -d build/ && gh-pages --dist build/ --branch master",
@@ -39,6 +39,7 @@
   "devDependencies": {
     "gh-pages": "~0.3.1",
     "moment": "~2.3.0",
+    "shallow-settings": "~0.1.0",
     "typogr": "~0.5.0",
     "underscore": "~1.4.0",
     "wintersmith": "~2.2.0"
