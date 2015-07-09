@@ -1,11 +1,21 @@
 {
-  "locals": {
-    "url": "http://engineering.underdog.io",
-    "name": "Underdog.io Engineering blog",
-    "owner": "Underdog.io Engineering",
-    "description": "Articles and insights from the Underdog.io Engineering team"
+  "env-locals": {
+    "common": {
+      "description": "Articles and insights from the Underdog.io Engineering team",
+      "ga_id": "UA-64967323-1",
+      "name": "Underdog.io Engineering blog",
+      "owner": "Underdog.io Engineering",
+      "url": "http://localhost:8080"
+    },
+    "development": {
+    },
+    "production": {
+      "ga_id": "UA-49880770-1",
+      "url": "http://engineering.underdog.io"
+    }
   },
   "plugins": [
+    "./plugins/env-locals.js",
     "./plugins/paginator.coffee"
   ],
   "require": {
