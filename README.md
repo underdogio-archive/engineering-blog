@@ -49,7 +49,7 @@ npm run preview-release
 # http://htmlpreview.github.io/?https://github.com/underdogio/underdogio.github.io/blob/{{preview_branch}}/index.html
 ```
 
-#### OS X Troubleshooting
+#### OS X troubleshooting
 If you are on OS X and running into issues (e.g. `globstar` isn't defined and `sed` doesn't support `--in-place`), then please upgrade your `bash` to `>=4.0.0` and install `gnu-sed`:
 
 - `bash`
@@ -87,6 +87,14 @@ Under the hood, this will run the following steps:
 5. Creates git tag under `version`
 6. Pushes git commit and tags
 7. Deploys site to GitHub pages
+
+
+#### OS X troubleshooting
+If you are on OS X and running into issues (e.g. `--utc` isn't defined), then please install `coreutils` via `brew`. This will install an updated version of `date` which support `--utc` and nanoseconds.
+
+```bash
+brew install coreutils
+```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Test via `npm test`.
