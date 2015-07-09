@@ -5,13 +5,48 @@
     <atom:link href="http://engineering.underdog.io/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://engineering.underdog.io</link>
     <description>Articles and insights from the Underdog.io Engineering team</description>
-    <pubDate>Thu, 18 Jun 2015 19:00:00 -0500</pubDate>
+    <pubDate>Sat, 20 Jun 2015 20:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
+      <title>Roll call: Brett Langdon</title>
+      <link>http://engineering.underdog.io/articles/roll-call-brett/</link>
+      <pubDate>Sat, 20 Jun 2015 20:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://engineering.underdog.io/articles/roll-call-brett/</guid>
+      <author></author>
+      <description>&lt;p&gt;This is the next part of our introductory series to look behind the curtain into the engineering team at &lt;a href=&quot;https://underdog.io&quot;&gt;Underdog.io&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt=&quot;Photo of Brett&quot; src=&quot;brett.jpg&quot; style=&quot;width: auto; float: left; padding-right: 10px;&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;who-are-you-and-what-do-you-do-at-underdog-io-&quot;&gt;Who are you and what do you do at Underdog.io?&lt;/h4&gt;
+&lt;p&gt;My name is Brett Langdon and I am senior software engineer at &lt;a href=&quot;https://underdog.io&quot;&gt;Underdog.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since we are still a small team, we all get to wear many hats and get our hands dirty with every aspect of our platform. Some days I am either writing Python/Node.js, writing HTML/CSS/JS, or staring at our &lt;a href=&quot;https://aws.amazon.com/&quot;&gt;AWS&lt;/a&gt; management console/&lt;a href=&quot;http://www.datadoghq.com/&quot;&gt;Datadog&lt;/a&gt; dashboards.&lt;/p&gt;
+&lt;h4 id=&quot;what-hardware-do-you-use-&quot;&gt;What hardware do you use?&lt;/h4&gt;
+&lt;p&gt;I use a 21” iMac and a WASD &lt;a href=&quot;https://codekeyboards.com/&quot;&gt;CODE keyboard&lt;/a&gt; to help ensure the entire office knows when I am typing something.&lt;/p&gt;
+&lt;h4 id=&quot;what-software-do-you-use-&quot;&gt;What software do you use?&lt;/h4&gt;
+&lt;p&gt;I spend a good majority of my day in the terminal, so for productivity there I use &lt;a href=&quot;https://www.iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; as a terminal emulator, &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot;&gt;oh-my-zsh&lt;/a&gt; to provide zsh plugins/themes, &lt;a href=&quot;http://brew.sh/&quot;&gt;homebrew&lt;/a&gt; for installing third party tools, and &lt;a href=&quot;http://tmux.github.io/&quot;&gt;tmux&lt;/a&gt; to organize my terminal workspace.&lt;/p&gt;
+&lt;p&gt;Since I am a software engineer I have to spend a lot of time writing code, for that I use &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;emacs&lt;/a&gt; along with some fun packages like &lt;a href=&quot;https://github.com/jorgenschaefer/elpy&quot;&gt;elpy&lt;/a&gt; to help auto-complete and lint my code while I am writing it.&lt;/p&gt;
+&lt;p&gt;When I am not writing code, I am usually running it. A few python packages that I do not think I could live without are the &lt;a href=&quot;http://bpython-interpreter.org/&quot;&gt;bpython&lt;/a&gt; interpreter, &lt;a href=&quot;https://pypi.python.org/pypi/pdbpp/&quot;&gt;pdb++&lt;/a&gt;, and &lt;a href=&quot;https://virtualenvwrapper.readthedocs.org/en/latest/&quot;&gt;virtualenvwrapper&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When I am not writing or running code, it is usually spent sending fellow team members appropriate emojis and gifs based on the context of some other conversation. For communication at work we use &lt;a href=&quot;http://slack.com/&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;out-of-all-the-tools-you-use-what-is-your-favorite-&quot;&gt;Out of all the tools you use, what is your favorite?&lt;/h4&gt;
+&lt;p&gt;This is a really hard question to answer. I do not think I have any one particular tool that I like more than the others. I think instead I really like my setup as a whole since it is what I have continually refined to help me be productive while at work.&lt;/p&gt;
+&lt;p&gt;You can check out my &lt;a href=&quot;https://github.com/brettlangdon/dotfiles&quot;&gt;dotfiles&lt;/a&gt; if you are interested in seeing my full setup.&lt;/p&gt;
+&lt;h4 id=&quot;outside-of-work-what-s-your-favorite-hobby-&quot;&gt;Outside of work, what’s your favorite hobby?&lt;/h4&gt;
+&lt;p&gt;Aside from ordering Seamless and binge watching Netflix, I rather enjoy taking nice long walks around the park as well I am an avid chef/baker and always try to be in my kitchen whenever I can (even in the summer!).&lt;/p&gt;
+&lt;h3 id=&quot;underdog-io-bonus-question&quot;&gt;Underdog.io bonus question&lt;/h3&gt;
+&lt;h4 id=&quot;what-s-your-favorite-interview-question-&quot;&gt;What’s your favorite interview question?&lt;/h4&gt;
+&lt;p&gt;A question which I heard recently from a friend which I really rather like is “If you could redesign the process for washing and drying clothes, what would your solution look like?”&lt;/p&gt;
+&lt;p&gt;These types of open ended conversational questions are great for interviews, because they aren’t meant to trick the candidate or blatantly find gaps in their experience. They are meant to make them feel comfortable and let them drive the conversation in any direction they want, which is a great way to learn a lot about how they think.&lt;/p&gt;
+&lt;p&gt;As an interviewer it is also helpful to see how they choose to work with you during questions like these and how in-depth they choose to go. As well, since they are driving the conversation you might end up getting useful information from them that you would not normally get from a more straight forward question.&lt;/p&gt;
+&lt;h4 id=&quot;links-&quot;&gt;Links:&lt;/h4&gt;
+&lt;p&gt;Website: &lt;a href=&quot;https://brett.is&quot;&gt;https://brett.is&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Twitter: &lt;a href=&quot;https://twitter.com/brett_langdon&quot;&gt;https://twitter.com/brett_langdon&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/brettlangdon&quot;&gt;https://github.com/brettlangdon&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Roll call: Todd Wolfson</title>
       <link>http://engineering.underdog.io/articles/roll-call-todd/</link>
-      <pubDate>Thu, 18 Jun 2015 19:00:00 -0500</pubDate>
+      <pubDate>Thu, 18 Jun 2015 20:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://engineering.underdog.io/articles/roll-call-todd/</guid>
       <author></author>
       <description>&lt;p&gt;This is the first work in an introductory series to let you peek behind the curtain and get to know the engineering team at &lt;a href=&quot;https://underdog.io/&quot;&gt;Underdog.io&lt;/a&gt;.&lt;/p&gt;
