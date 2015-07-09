@@ -23,12 +23,13 @@ shopt -u globstar
 # Update the absolute paths (but not absolute URLs) to be prefixed with repo
 # DEV: This is necessary for raw.githubcontent.com
 #   `/css/main.css` -> `/underdogio/underdogio.github.io/my-preview-branch/css/main.css`
+#   `//fonts.googleapis.com/` -> `//fonts.googleapis.com/`
 branch="$(git symbolic-ref HEAD --short)"
 preview_branch="$branch.preview"
 escaped_preview_branch="$(echo $preview_branch | $sed -E "s/\\//\\\\\//g")"
 shopt -s globstar
-$sed -E "s/( href=)\"\/([^\"]+)/\1\"\/underdogio\/underdogio.github.io\/$escaped_preview_branch\/\2/" build/**/*.html --in-place
-$sed -E "s/( src=)\"\/([^\"]+)/\1\"\/underdogio\/underdogio.github.io\/$escaped_preview_branch\/\2/" build/**/*.html --in-place
+$sed -E "s/( href=)\"\/([^\/][^\"]*)/\1\"\/underdogio\/underdogio.github.io\/$escaped_preview_branch\/\2/" build/**/*.html --in-place
+$sed -E "s/( src=)\"\/([^\/][^\"]*)/\1\"\/underdogio\/underdogio.github.io\/$escaped_preview_branch\/\2/" build/**/*.html --in-place
 shopt -u globstar
 
 # Publish our folder
