@@ -64,15 +64,7 @@ If you are on OS X and running into issues (e.g. `globstar` isn't defined and `s
     - This installs `gsed` to your command line
 
 ### Releasing
-We have automated our release process to keep it consistent among developers. Before releasing, please make sure to update the `CHANGELOG.md`.
-
-```bash
-pico CHANGELOG.md
-git add CHANGELOG.md
-git commit -m "Added June 19 2015 publication notes"
-```
-
-To publish a new release, run:
+We have automated our release process to keep it consistent among developers. To publish a new release, run:
 
 ```bash
 npm run release
