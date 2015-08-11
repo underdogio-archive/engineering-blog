@@ -415,3 +415,128 @@ code.lang-markdown .bullet {
     margin-bottom: 1em;
   }
 }
+
+/* CUSTOM CSS SEPARATE FROM WINTERSMITH */
+/* Via https://github.com/csswizardry/inuit.css/blob/v5.0.1/generic/_clearfix.scss */
+.cf:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Define a navigation component */
+.navbar {
+  background: #635f7d;
+  color: white;
+}
+.navbar__logo {
+  vertical-align: middle;
+  /* Height and margin total to 68px; nav height same as underdog.io */
+  height: 44px;
+  margin: 12px 0;
+}
+.nav {
+  margin: 0;
+  line-height: 68px; /* Same height as on underdog.io */
+  font-size: 12px;
+  letter-spacing: 1px;
+  list-style: none;
+}
+.nav__item {
+  line-height: 68px; /* Same height as on underdog.io */
+  display: inline-block;
+  margin-left: 30px; /* Same width as on underdog.io */
+}
+
+@media only screen and (max-width: 480px) {
+  .nav, .nav__item {
+    line-height: inherit;
+  }
+
+  .nav__item {
+    margin-left: 12px;
+  }
+}
+
+/* Define our link styles */
+.border-link {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+.border-link:hover {
+  text-decoration: none; /* Undesirable override over `a:hover` from `wintersmith's main.css` */
+  border-bottom: 2px solid white;
+}
+
+/* Define our button styles */
+.btn {
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  padding: 10px;
+}
+.btn:hover {
+  text-decoration: none; /* Undesirable override over `a:hover` from `wintersmith's main.css` */
+}
+.btn--default {
+  background-color: #635f7d;
+  border: 1px solid rgba(244, 244, 244, 0.9);
+}
+.btn--default:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Helper styles */
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .hidden--palm {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .hidden--lap {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .hidden--lap-and-up {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .hidden--portable {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hidden--desk {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hidden--desk-wide {
+    display: none;
+  }
+}
+
+/* https://github.com/csswizardry/inuit.css/blob/v5.0.1/generic/_helper.scss#L15-L28 */
+.float--right { float: right !important; }
+.float--left  { float: left  !important; }
+.float--none  { float: none  !important; }
+
+.text--left   { text-align: left   !important; }
+.text--center { text-align: center !important; }
+.text--right  { text-align: right  !important; }
+
+/* https://github.com/csswizardry/inuit.css/blob/v5.0.1/generic/_helper.scss#L152-L154 */
+.caps {
+    text-transform: uppercase !important;
+}

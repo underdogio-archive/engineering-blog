@@ -5,13 +5,13 @@
     <atom:link href="http://engineering.underdog.io/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://engineering.underdog.io</link>
     <description>Articles and insights from the Underdog.io Engineering team</description>
-    <pubDate>Sat, 20 Jun 2015 20:00:00 -0400</pubDate>
+    <pubDate>Sat, 20 Jun 2015 19:00:00 -0500</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Roll call: Brett Langdon</title>
       <link>http://engineering.underdog.io/articles/roll-call-brett/</link>
-      <pubDate>Sat, 20 Jun 2015 20:00:00 -0400</pubDate>
+      <pubDate>Sat, 20 Jun 2015 19:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://engineering.underdog.io/articles/roll-call-brett/</guid>
       <author></author>
       <description>&lt;p&gt;This is the next part of our introductory series to look behind the curtain into the engineering team at &lt;a href=&quot;https://underdog.io&quot;&gt;Underdog.io&lt;/a&gt;.&lt;/p&gt;
@@ -46,7 +46,7 @@
     <item>
       <title>Roll call: Todd Wolfson</title>
       <link>http://engineering.underdog.io/articles/roll-call-todd/</link>
-      <pubDate>Thu, 18 Jun 2015 20:00:00 -0400</pubDate>
+      <pubDate>Thu, 18 Jun 2015 19:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://engineering.underdog.io/articles/roll-call-todd/</guid>
       <author></author>
       <description>&lt;p&gt;This is the first work in an introductory series to let you peek behind the curtain and get to know the engineering team at &lt;a href=&quot;https://underdog.io/&quot;&gt;Underdog.io&lt;/a&gt;.&lt;/p&gt;
