@@ -30,6 +30,7 @@
     "clean": "if test -d build/; then rm -r build/; fi",
     "deploy": "echo \"Do not run this command directly. Instead, please run \\`bin/release.sh\\` as documented in README.md\" && exit 1",
     "_deploy": "test -d build/ && gh-pages --dist build/ --branch master",
+    "postinstall": "bower install",
     "preview-release": "bin/preview-release.sh",
     "release": "bin/release.sh",
     "start": "wintersmith preview",
@@ -37,6 +38,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "bower": "^1.7.9",
     "gh-pages": "~0.3.1",
     "moment": "~2.3.0",
     "shallow-settings": "~0.1.0",
