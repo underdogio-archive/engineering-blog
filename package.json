@@ -1,0 +1,54 @@
+{
+  "name": "underdogio.github.io",
+  "description": "Engineering blog for Underdog.io",
+  "version": "20150811.170002.786740000",
+  "homepage": "https://github.com/underdogio/underdogio.github.io",
+  "author": {
+    "name": "Underdog.io Engineering",
+    "email": "todd@underdog.io",
+    "url": "http://engineering.underdog.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/underdogio/underdogio.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/underdogio/underdogio.github.io/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/underdogio/underdogio.github.io/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/underdogio.github.io",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "build": "export NODE_ENV=production; npm run clean && wintersmith build && echo \"engineering.underdog.io\" > build/CNAME",
+    "clean": "if test -d build/; then rm -r build/; fi",
+    "deploy": "echo \"Do not run this command directly. Instead, please run \\`bin/release.sh\\` as documented in README.md\" && exit 1",
+    "_deploy": "test -d build/ && gh-pages --dist build/ --branch master",
+    "preview-release": "bin/preview-release.sh",
+    "release": "bin/release.sh",
+    "start": "wintersmith preview",
+    "test": "bin/test.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "~0.3.1",
+    "moment": "~2.3.0",
+    "shallow-settings": "~0.1.0",
+    "typogr": "~0.5.0",
+    "underscore": "~1.4.0",
+    "wintersmith": "~2.2.0"
+  },
+  "keywords": [
+    "underdog.io",
+    "underdogio",
+    "engineering",
+    "blog"
+  ],
+  "private": true
+}
